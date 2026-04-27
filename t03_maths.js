@@ -1,1 +1,37 @@
-/* Paste your code from task 2 here */
+/* 
+Introduction
+*/
+console.log("Running t01_variables.js")
+console.log("Is it running? Haha its working.")
+
+//Variables
+
+var year="2026"
+var name="Abhi"
+var age=15
+var number1=502.5
+var number2=10
+var number3=2
+var dollar=67
+var futureage= age + number2
+var moneyleft= dollar/number3
+console.log("Hi, My name is "+name+". As of "+year+", I'm "+age+" years old. I was born in "+ number1 * 4 +". In 10 years, I will be "+futureage+ ". I have "+dollar+" cents. I spend half of my money, now I have "+ moneyleft+" cents.");
+
+
+
+
+
+/*
+Main Code
+*/
+
+
+
+
+
+
+
+
+/*
+Functions
+*/
