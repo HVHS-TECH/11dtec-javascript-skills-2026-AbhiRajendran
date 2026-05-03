@@ -25,7 +25,7 @@ OUTPUT.innerHTML = "<h2>Hi, My name is " + name + ". As of " + year + ", I'm " +
 
 
 /*
-Main Code
+Main Code 
 */
 
 
