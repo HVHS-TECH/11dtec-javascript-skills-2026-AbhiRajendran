@@ -28,7 +28,7 @@ OUTPUT.innerHTML = "<h2>Hi, My name is " + name + ". As of " + year + ", I'm " +
 Main Code
 */
 
-
+writeLine()
 
 
 
@@ -38,3 +38,7 @@ Main Code
 /*
 Functions
 */
+
+function writeLine(){
+OUTPUT.innerHTML+="<h2> Welcome to the Shop</h2>";
+}
