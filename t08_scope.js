@@ -4,7 +4,7 @@ const output = document.getElementById("output");
 
 
 var myVar = 0;
-output.innerHTML = "Start: "+myVar+"<br>";
+output.innerHTML = "Start: "+myVar+"<br>" ;
 
 functionOne();
 function functionOne() {
