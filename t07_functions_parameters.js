@@ -44,6 +44,6 @@ function writeLine(){
 OUTPUT.innerHTML+="<h2> Welcome to the Shop</h2>";
 }
 
-function displayProduct(_name,_price){
+function displayProduct(_name,_price){   
 OUTPUT.innerHTML+= "<h3>The "+_name+" is $"+_price+"</h3>";
 }

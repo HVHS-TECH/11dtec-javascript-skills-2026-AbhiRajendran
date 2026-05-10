@@ -46,9 +46,7 @@ function writeLine() {
 function start() {
 
     const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
-    OUTPUT.innerHTML = "<h2>Hi, My name is " + name + ". As of " + year + ", I'm " + age + " years old. I was born in " + number1 * 4
-    OUTPUT.innerHTML = "In 10 years, I will be " + futureage + ". I have " + dollar
-    OUTPUT.innerHTML = " cents. I spend half of my money, now I have " + moneyleft
-    OUTPUT.innerHTML = "  cents. Then I got $3, Now I have " + addmoney + " cents.</h2>"
+    OUTPUT.innerHTML = "<h2>How are you.</h2>"
+
 
 }               
