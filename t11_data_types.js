@@ -2,7 +2,7 @@
 Introduction
 */
 console.log("Running t11_data_types.js")
-console.log("Is it running? Haha its working.")
+console.log("Is it running? Haha its working.") 
 
 //Variables
 
@@ -52,8 +52,10 @@ function start() {
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 const AGE_FIELD = document.getElementById("ageField");
+const MONEY_FIELD = document.getElementById("moneyField");
 let userName = NAME_FIELD.value;
 let userAge = AGE_FIELD.value;
-OUTPUT.innerHTML ="<h2>Welcome to the Shop, "+userName+". You are "+userAge+" years old.</h2>";   
+let userMoney = MONEY_FIELD.value;
+OUTPUT.innerHTML ="<h2>Welcome to the Shop, "+userName+". You are "+userAge+" years old. You have "+userMoney+" dollars.</h2>";   
 
 }
