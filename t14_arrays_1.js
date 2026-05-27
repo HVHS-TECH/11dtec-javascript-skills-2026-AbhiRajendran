@@ -65,5 +65,10 @@ let balance = _money - _price;
 OUTPUT.innerHTML = "<h2>You have $"+balance+" dollars left. </h2>"
 }
 
-let classArray =["You loath"]
-
+function chooseOpinion(){
+const OUTPUT = document.getElementById("chocolate");
+const CHOOSE_FIELD = document.getElementById("chocolateField");
+let classArray =["You loath chocolate.","Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing ever."];
+let choice = CHOOSE_FIELD.value;
+OUTPUT.innerHTML = "<h2>You chose:"+classArray[choice]+"</h2>";
+}

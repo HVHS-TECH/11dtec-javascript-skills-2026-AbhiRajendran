@@ -34,10 +34,14 @@
     <input type="number" id="ageField" name="formAge" placeholder="Age"> 
     <label for="formMoney">Money:</label>
     <input type="number" id="moneyField" name="formMoney" placeholder="Money"> 
-    <input type="submit" onclick="getFormInput(); calculatePay();"> 
+    <label for="formChocolate">Rate how much you like chocolate out of 0-3</label>
+    <input type="number" id="chocolateField" name="formChocolate" placeholder="0-3">
+    <input type="submit" onclick="getFormInput(); calculatePay(); chooseOpinion();"> 
   </form >
 
   <div id="output"></div>
+
+<div id="chocolate"></div>
 
   <script src="../t14_arrays_1.js"></script>
 
