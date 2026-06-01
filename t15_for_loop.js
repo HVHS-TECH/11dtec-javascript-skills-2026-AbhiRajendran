@@ -75,7 +75,15 @@ OUTPUT.innerHTML = "<h2>You chose:"+classArray[choice]+"</h2>";
 
 function milk(){
 const OUTPUT = document.getElementById("milk");
-for(let i=100; i>=0; i--){
+const MILK_FIELD = document.getElementById("milkField");
+for(let i=MILK_FIELD.value; i>=0; i--)
+{
+if(i===1){
+OUTPUT.innerHTML +=("There's 1 bottle of milk on the wall <br>");
+}else if(i===0){
+OUTPUT.innerHTML +=("There's 0 bottle of milk on the wall<br>");
+}else{
 OUTPUT.innerHTML +=("There's "+i+" bottles of milk on the wall <br>");
 }
 }
+} 

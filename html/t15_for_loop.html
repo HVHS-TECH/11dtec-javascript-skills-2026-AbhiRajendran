@@ -26,7 +26,7 @@
     <input type="number" id="ageField" name="formAge" placeholder="Age"> 
     <label for="formMoney">Money:</label>
     <input type="number" id="moneyField" name="formMoney" placeholder="Money"> 
-    <label for="formChocolate">Rate how much you like chocolate out of 0-3</label>
+    <label for="formChocolate">How much you like chocolate out of 0-3</label>
     <input type="number" id="chocolateField" name="formChocolate" placeholder="0-3">
     <input type="submit" onclick="getFormInput(); calculatePay(); chooseOpinion();"> 
   </form >
@@ -37,10 +37,15 @@
 
   </div>
 
-  <button onclick="milk()">START THE MILK</button>
+  <form onsubmit="return false;">
+    <label for="formMilk">How much milk:</label>
+    <input type="number" id="milkField" name="formMilk" placeholder="Milk">
+    <input type="submit" onclick="milk();"> 
+  </form>
+  
 
   <div id="output"></div>
-
+ 
   <div id="chocolate"></div>
 
   <div id="milk"></div>
