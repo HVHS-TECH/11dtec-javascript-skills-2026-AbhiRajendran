@@ -47,6 +47,12 @@ function getFormInput() {
     let userAge = Number(AGE_FIELD.value);
     let userMoney = Number(MONEY_FIELD.value);
 
+    if (userName.length < 3)  {
+        alert("Name must be three letters long!");
+        return false;
+    }
+
+
     if (/\d/.test(NAME_FIELD.value)) {
         alert("Name cannot contain numbers");
         return false;
@@ -57,6 +63,7 @@ function getFormInput() {
     } else {
         OUTPUT.innerHTML = "<h2>Welcome to the Shop, " + userName + ". <br> <br> You are " + userAge + " years old. You have " + userMoney + " dollars. <br> <br> You can't even afford a chocolate Bar. Get Out!!</h2>";
     }
+    
 
 }
 
