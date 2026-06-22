@@ -29,7 +29,6 @@ Main Code
 
 
 
-
 /*
 Functions
 */
@@ -40,18 +39,18 @@ function writeLine() {
 
 
 function getFormInput() {
+
     const NAME_FIELD = document.getElementById("nameField");
     const AGE_FIELD = document.getElementById("ageField");
     const MONEY_FIELD = document.getElementById("moneyField");
     let userName = String(NAME_FIELD.value);
     let userAge = Number(AGE_FIELD.value);
     let userMoney = Number(MONEY_FIELD.value);
-
+    
     if (userName.length < 3)  {
         alert("Name must be three letters long!");
-        return false;
-    }
-
+        return false; 
+    } 
 
     if (/\d/.test(NAME_FIELD.value)) {
         alert("Name cannot contain numbers");
@@ -64,7 +63,7 @@ function getFormInput() {
         OUTPUT.innerHTML = "<h2>Welcome to the Shop, " + userName + ". <br> <br> You are " + userAge + " years old. You have " + userMoney + " dollars. <br> <br> You can't even afford a chocolate Bar. Get Out!!</h2>";
     }
     
-
+   return true;
 }
 
 function calculatePay() {
@@ -111,9 +110,21 @@ function shoppingList() {
     }
 }
 
+
 function runProgram() {
-    getFormInput();
-    calculatePay();
-    chooseOpinion();
-    shoppingList();
+   if (getFormInput() === false) {
+    return;
+   }
+   if (calculatePay() === false) {
+    return;
+   }
+   if (chooseOpinion() === false) {
+    return;
+   }
+   if (shoppingList() === false) {
+    return;
+   }
+    
+
 }
+
